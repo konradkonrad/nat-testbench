@@ -24,6 +24,7 @@ Each NAT'ted machine has host entries for:
 - `my-lan-ip`: points to the "private" ip behind the NAT
 - `my-public-ip`: points to the "public" ip of the NAT
 - `stun.server.local`: points to the STUN server
+- all other NAT hosts by their name (e.g. `fullcone`)
 
 Per default, all VMs have [`pystun`](https://github.com/jtriley/pystun) installed. To test the different NAT types, you
 can do

@@ -25,6 +25,10 @@ Vagrant.configure("2") do |config|
     apt-get install -y python-virtualenv python-dev
     echo "192.168.42.10 stun.server.local" >> /etc/hosts
     echo "192.168.42.20 stun2.server.local" >> /etc/hosts
+    echo "192.168.42.100 fullcone" >> /etc/hosts
+    echo "192.168.42.110 restrictedcone" >> /etc/hosts
+    echo "192.168.42.120 portrestrictedcone" >> /etc/hosts
+    echo "192.168.42.130 symmetric" >> /etc/hosts
   SHELL
   # user
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
